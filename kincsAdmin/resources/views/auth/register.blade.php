@@ -50,7 +50,7 @@
                             <label for="role" class="col-md-4 col-form-label text-md-end">{{ __('Role') }}</label>
 
                             <div class="col-md-6">
-                                <select id="role" name="role" class="form-control @error('password') is-invalid @enderror" required autocomplete="role">
+                                <select id="role" name="role" class="form-control @error('role') is-invalid @enderror" required autocomplete="role">
                                     <option value="admin" >{{ __('Admin') }}</option>
                                     <option value="user" >{{ __('User') }}</option>
                                 </select>

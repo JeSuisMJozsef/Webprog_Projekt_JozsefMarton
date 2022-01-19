@@ -16,7 +16,7 @@ class ProductsTableSeeder extends Seeder
     {
         DB::table('products')->insert([
             'category_id'=>1,
-            'product_name'=>'Paradicsom',
+            'name'=>'Paradicsom',
             'sku'=>'1000',
             'packaging'=>'kg',
             'stock'=>0,
@@ -25,7 +25,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>1,
-            'product_name'=>'Paprika',
+            'name'=>'Paprika',
             'sku'=>'1100',
             'packaging'=>'kg',
             'stock'=>0,
@@ -34,7 +34,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>1,
-            'product_name'=>'Saláta',
+            'name'=>'Saláta',
             'sku'=>'1200',
             'packaging'=>'db',
             'stock'=>0,
@@ -43,7 +43,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>2,
-            'product_name'=>'Alma',
+            'name'=>'Alma',
             'sku'=>'2000',
             'packaging'=>'kg',
             'stock'=>0,
@@ -52,7 +52,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>2,
-            'product_name'=>'Málna',
+            'name'=>'Málna',
             'sku'=>'2100',
             'packaging'=>'kg',
             'stock'=>0,
@@ -60,8 +60,8 @@ class ProductsTableSeeder extends Seeder
     
         ]);
         DB::table('products')->insert([
-            'category_id'=>1,
-            'product_name'=>'Aszalt szilva',
+            'category_id'=>2,
+            'name'=>'Aszalt szilva',
             'sku'=>'2200',
             'packaging'=>'csomag',
             'stock'=>0,
@@ -70,7 +70,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>3,
-            'product_name'=>'Friss tej',
+            'name'=>'Friss tej',
             'sku'=>'3000',
             'packaging'=>'l',
             'stock'=>0,
@@ -79,7 +79,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>4,
-            'product_name'=>'Tojás 10',
+            'name'=>'Tojás 10',
             'sku'=>'4000',
             'packaging'=>'csomag',
             'stock'=>0,
@@ -88,7 +88,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>4,
-            'product_name'=>'Tojás 20',
+            'name'=>'Tojás 20',
             'sku'=>'4100',
             'packaging'=>'csomag',
             'stock'=>0,
@@ -97,7 +97,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>4,
-            'product_name'=>'Tojás 30',
+            'name'=>'Tojás 30',
             'sku'=>'4200',
             'packaging'=>'csomag',
             'stock'=>0,
@@ -106,7 +106,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>5,
-            'product_name'=>'Barna házi',
+            'name'=>'Barna házi',
             'sku'=>'5000',
             'packaging'=>'db',
             'stock'=>0,
@@ -115,7 +115,7 @@ class ProductsTableSeeder extends Seeder
         ]);
         DB::table('products')->insert([
             'category_id'=>5,
-            'product_name'=>'Fehér házi',
+            'name'=>'Fehér házi',
             'sku'=>'5100',
             'packaging'=>'db',
             'stock'=>0,

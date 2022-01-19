@@ -15,24 +15,24 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            'category_name'=>'Zöldség',
-            'category_desc'=>'A paradicsom igazából nem is zöldség',
+            'name'=>'Zöldség',
+            'description'=>'A paradicsom igazából nem is zöldség!',
         ]);
         DB::table('categories')->insert([
-            'category_name'=>'Gyümölcs',
-            'category_desc'=>'A paradicsom igazából gyümölcs',
+            'name'=>'Gyümölcs',
+            'description'=>'A paradicsom valójában gyümölcs!',
         ]);
         DB::table('categories')->insert([
-            'category_name'=>'Tej',
-            'category_desc'=>'Nagyon jó fehérjeforrás',
+            'name'=>'Tej',
+            'description'=>'Nagyon jó fehérje és kálcium forrás!',
         ]);
         DB::table('categories')->insert([
-            'category_name'=>'Tojás',
-            'category_desc'=>'A bajnokok reggelijének egyik alapanyaga',
+            'name'=>'Tojás',
+            'description'=>'A bajnokok reggelijének egyik alapanyaga.',
         ]);
         DB::table('categories')->insert([
-            'category_name'=>'Kenyér',
-            'category_desc'=>'Jobb itthon a fekete, mint máshol a fehér',
+            'name'=>'Kenyér',
+            'description'=>'..Jobb itthon a fekete, mint máshol a fehér..',
         ]);
     }
 }

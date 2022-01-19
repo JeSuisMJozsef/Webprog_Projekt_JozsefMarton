@@ -11,9 +11,9 @@
 @section('content')
     <div class="text-center p-5">
         <a href="{{route('home')}}">
-            <img src="{{ url('images/welcome.jpeg') }}" class="img shadow p-3 mb-5 bg-white rounded-circle" alt="welcome"/>
+            <img src="{{ url('images/welcome.jpeg') }}" class="img-fluid shadow p-3 mb-5 bg-white rounded-circle" alt="welcome"/>
         </a>
-        
+
     </div>
 @endsection
 

@@ -12,20 +12,39 @@
         <script>testmodal('alert alert-danger', 'You can`t delete yourself. Use profile to delete your account!')</script>
         @break
 
-        @case('editedbase')
+        @case('editedBase')
         <script>testmodal('alert alert-success', 'Successfully edited the base of the userdata')</script>
         @break
 
-        @case('editedwithpassword')
+        @case('editedWithPassword')
         <script>testmodal('alert alert-success', 'Successfully edited the base data and/or the password')</script>
         @break
 
-        @case('createdUser')
+        @case('userCreated')
         <script>testmodal('alert alert-success', 'Successfully added a new user')</script>
         @break
 
         @case('notfound')
         <script>testmodal('alert alert-warning', 'Page not found!')</script>
+        @break
+
+        @case('categoryCreated')
+        <script>testmodal('alert alert-success', 'Category successfully created!')</script>
+        @break
+        @case('categoryEdited')
+        <script>testmodal('alert alert-success', 'Category successfully edited!')</script>
+        @break
+        @case('categoryDeleted')
+        <script>testmodal('alert alert-success', 'Category (and related products) successfully deleted!')</script>
+        @break
+        @case('productCreated')
+        <script>testmodal('alert alert-success', 'Product successfully created!')</script>
+        @break
+        @case('productEdited')
+        <script>testmodal('alert alert-success', 'Product successfully edited!')</script>
+        @break
+        @case('productDeleted')
+        <script>testmodal('alert alert-success', 'Product successfully deleted!')</script>
         @break
 
 

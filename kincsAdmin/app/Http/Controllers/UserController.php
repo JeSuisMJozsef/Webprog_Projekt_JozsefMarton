@@ -33,7 +33,7 @@
             ]);
             User::create($request->all());
             
-            return redirect()->route('users.index')->with('modal', 'createdUser');
+            return redirect()->route('users.index')->with('modal', 'userCreated');
         }
         
         public function edit(User $user)
@@ -43,17 +43,23 @@
         
         public function update(Request $request, User $user)
         {
+    
+            $request->validate([
+                'name' => 'required|unique:users,name,'.$user->id,
+                'email' => 'required|email|unique:users,email,'.$user->id,
+                'role' => 'required',
+            ]);
             if ($request['password'] && $request['password'] !== null) {
                 $request['password'] = bcrypt($request['password']);
                 $user->update($request->all());
-                return redirect()->route('users.index')->with('modal', 'editedwithpassword');
+                return redirect()->route('users.index')->with('modal', 'editedWithPassword');
                 
             }
             
             $input = request()->except(['password']);
             
             $user->update($input);
-            return redirect()->route('users.index')->with('modal', 'editedbase');
+            return redirect()->route('users.index')->with('modal', 'editedBase');
         }
         
         public function delete(User $user)
@@ -70,33 +76,6 @@
                 
                 return redirect()->route('users.index')->with('modal', 'userdeleteerror');
             }
-            
-        }
-        
-        public function me()
-        {
-            return response(Auth::user(), 200);
-        }
-        
-        public function editme(Request $request)
-        {
-            $id = Auth::user()->getAuthIdentifier();
-            $user = User::findOrFail($id);
-            if ($request['password']) {
-                $request['password'] = bcrypt($request['password']);
-            }
-            $user->update($request->all());
-            return response($user, 200);
-        }
-        
-        public function deleteme(Request $request)
-        {
-            $id = Auth::user()->getAuthIdentifier();
-            $user = User::findOrFail($id);
-            $user->tokens()->delete();
-            $user->delete();
-            Auth::logout();
-            return response(null, 204);
             
         }
     }

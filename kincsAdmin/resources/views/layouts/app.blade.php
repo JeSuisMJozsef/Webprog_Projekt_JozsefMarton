@@ -65,11 +65,11 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                <a class="dropdown-item" href="{{ route('categories.index') }}"
                                 >
                                     {{ __('Categories') }}
                                 </a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                <a class="dropdown-item" href="{{ route('products.index') }}"
                                 >
                                     {{ __('Products') }}
                                 </a>

@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <h5 class="card-title fw-bolder">Categories</h5>
                     <p class="card-text">Add, create, update, or delete categories.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Go to categories</a>
+                    <a href="{{route('categories.index')}}" class="btn btn-primary stretched-link">Go to categories</a>
                 </div>
             </div>
             <div class="card m-5" style="width: 18rem;">
@@ -32,7 +32,7 @@
                 <div class="card-body">
                     <h5 class="card-title fw-bolder">Products</h5>
                     <p class="card-text">Add, create, update, or delete products.</p>
-                    <a href="#" class="btn btn-primary stretched-link">Go to productsb</a>
+                    <a href="{{route('products.index')}}" class="btn btn-primary stretched-link">Go to products</a>
                 </div>
             </div>
         </div>
